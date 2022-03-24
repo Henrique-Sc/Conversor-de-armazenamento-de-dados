@@ -8,4 +8,5 @@ Deseja converter quais unidades?
 3 - Megabyte
 4 - Kilobyte''')
 
-esc = int(input('Digite aqui: '))
+while True:
+    esc = int(input('\nDigite aqui: '))

@@ -1,3 +1,5 @@
+from time import sleep
+
 def typevalue(num):
     if num == 1:
         tipo = 'TB'
@@ -13,7 +15,8 @@ def typevalue(num):
 
 print('---- Conversor de unidades de armazenamento ----')
 
-print('''
+while True:
+    print('''
 Deseja converter quais unidades?
 
 1 - Terabyte
@@ -21,13 +24,18 @@ Deseja converter quais unidades?
 3 - Megabyte
 4 - Kilobyte
 ''')
-
-while True:
     esc = int(input('Digite aqui: ').strip())
     if esc not in (1, 2, 3, 4):
         print('\nValor inválido! Insira um valor correto')
+        sleep(1)
+        print('\n---------------------------------------')
+        sleep(1)
     else:
+        sleep(0.5)
+        print('\n---------------------------------------')
+        sleep(0.5)
         break
 
-    
-valor = float(input(f'\nDigite o valor ({typevalue(esc)}): '))
+tipo_valor = typevalue(esc)
+valor = float(input(f'\nDigite o valor ({tipo_valor}): '))
+

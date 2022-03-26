@@ -12,6 +12,12 @@ def typevalue(num):
     
     return tipo
 
+def mostrarResult(value, typevalue):
+    # tiposDados = ['TB', 'GB', 'MB', 'KB']
+    
+    print(f'{value}{typevalue} em TB: {"num"}TB')
+
+
 def linha():
     sleep(0.5)
     print('\n---------------------------------------\n')
@@ -42,4 +48,3 @@ valor = float(input(f'Digite o valor ({tipo_valor}): '))
 
 linha()
 
-print('Olá mundo!')

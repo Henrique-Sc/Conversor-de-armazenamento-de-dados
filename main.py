@@ -11,7 +11,12 @@ def typevalue(num):
         tipo = 'KB'
     
     return tipo
-        
+
+def linha():
+    sleep(0.5)
+    print('\n---------------------------------------')
+    sleep(0.5)
+
 
 print('---- Conversor de unidades de armazenamento ----')
 
@@ -27,9 +32,9 @@ Deseja converter quais unidades?
     esc = int(input('Digite aqui: ').strip())
     if esc not in (1, 2, 3, 4):
         print('\nValor inválido! Insira um valor correto')
-        sleep(1)
+        sleep(0.5)
         print('\n---------------------------------------')
-        sleep(1)
+        sleep(0.5)
     else:
         sleep(0.5)
         print('\n---------------------------------------')

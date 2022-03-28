@@ -1,2 +1,2 @@
 # Conversor-de-armazenamento-de-dados
- Conversão entre Terabytes, Gigabytes, Megabytes e Kilobytes
+Conversão de Gigabytes para Terabytes, Megabytes e Kilobytes
